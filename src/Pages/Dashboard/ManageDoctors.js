@@ -45,7 +45,7 @@ const ManageDoctors = () => {
                 toast.success(`Doctor ${doctor.name} deleted Successfully`)
                 refetch()
             }
-            // console.log(data)
+          
          
         })
     }
@@ -99,9 +99,7 @@ const ManageDoctors = () => {
      successAction ={handleDeleteDoctor}
      modalData= {deleteDoctor}
      successButtonName="Delete"
-     >
-
-                    
+     >                
     </ComfirmationModal>}
         </div>
     );

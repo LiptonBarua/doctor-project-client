@@ -66,7 +66,7 @@ const BookModal = ({tritment, selectedDay, setTritment, refetch}) => {
                         <input type="text" name='name' defaultValue={user?.displayName} disabled placeholder="Full Name" className="input input-bordered w-full" /><br />
                         <input type="number" name='phone' placeholder="Phone Name" className="input input-bordered w-full" /><br />
                         <input type="email" name='email' defaultValue={user?.email} disabled placeholder="Email" className="input input-bordered w-full" /><br />
-                        <button type="submit" value='submit' className='w-full btn btn-accent'>SUBMIT</button>
+                        <button type="submit" value='submit' className='w-full btn btn-primary'>SUBMIT</button>
                     </form>
                 </div>
             </div>

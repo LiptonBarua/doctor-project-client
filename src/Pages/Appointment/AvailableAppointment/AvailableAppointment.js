@@ -14,11 +14,7 @@ const AvailableAppointment = ({selectedDay}) => {
         queryFn: ()=>fetch(`https://doctor-portal-server-one.vercel.app/apponintmentOption?date=${date}`)
         .then(res=>res.json())
     })
-    // useEffect(()=>{
-    //     fetch('https://doctor-portal-server-one.vercel.app/apponintmentOption')
-    //     .then(res=>res.json())
-    //     .then(data=>setAppointment(data))
-    // },[])
+
     if(isLoading){
         return <Loading></Loading>
     }

@@ -24,7 +24,7 @@ const SignUp = () => {
         .then(result=>{
             const user=result.user;
             console.log(user)
-             toast('user created successfully')
+             toast.success('user created successfully')
             const userInfo={
                 displayName: data.name
             }

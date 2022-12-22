@@ -37,7 +37,9 @@ const AddDoctor = () => {
             email: data.email,
             specialty: data.specialty,
             image:imgData.data.url
+          
         };
+        
 
         fetch('https://doctor-portal-server-one.vercel.app/doctors', {
             method: 'POST',
@@ -62,17 +64,17 @@ const AddDoctor = () => {
     }
     return (
         <div>
-            {/* <h1>This is doctor</h1> */}
+            
             <div>
         <div className='w-96 p-7'>
             <form onSubmit={handleSubmit(handleAddDoctor)}>
               
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full ">
                     <label className="label"><span className="label-text">Name</span></label>
                     <input placeholder='Enter Your Name' type="text" {...register("name", {required: 'Name is Required'})} className="input input-bordered w-full max-w-xs"/> 
                     {errors.name && <p role="alert" className='text-red-500'>{errors.name?.message}</p>}
                 </div>
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full ">
                     <label className="label"><span className="label-text">Email</span></label>
                     <input placeholder='Enter Your email' type="email" {...register("email", {required: "Email Address is required"})} 
                     className="input input-bordered w-full max-w-xs"/> 

@@ -53,11 +53,11 @@ const router = createBrowserRouter([
         {
             path: '/dashboard/manageDoctors', element: <AdminRouter><ManageDoctors></ManageDoctors></AdminRouter>
         },
-        {
-            path: '/dashboard/payment/:id', 
-            element: <AdminRouter><Payment></Payment></AdminRouter>,
-            loader: ({params})=>fetch(`https://doctor-portal-server-one.vercel.app/booking/${params.id}`)
-        }
+        // {
+        //     path: '/dashboard/payment/:id', 
+        //     element: <AdminRouter><Payment></Payment></AdminRouter>,
+        //     loader: ({params})=>fetch(`https://doctor-portal-server-one.vercel.app/booking/${params.id}`)
+        // }
     ]
 }
 ])
