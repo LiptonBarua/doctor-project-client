@@ -29,6 +29,7 @@ const AllUsers = () => {
         })
     }
     return (
+       
         <div>
            <h1 className='text-3xl mb-5 text-orange-500 font-bold'>All User</h1>
             <div className="overflow-x-auto">
